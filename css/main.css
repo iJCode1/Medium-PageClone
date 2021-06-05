@@ -22,6 +22,7 @@ body{
 header  p:first-child{
   line-height: 24px;
   margin: 0;
+  margin-block-end: 16px;
   text-transform: uppercase;
 }
 
@@ -64,9 +65,7 @@ header{
     font-size: 3.2rem;
   }
 
-  .debug{
-    /* border: 2px solid red; */
-  }
+  
   
   .hero{
     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url("../assets/icons/pattern.svg");
@@ -77,6 +76,10 @@ header{
   .wrapper{
     max-width: 900px;
     margin: 0 auto;
+  }
+
+  main{
+    margin-block-end: 50px;
   }
   
   .main hr{
@@ -152,10 +155,12 @@ header{
     left: 0;
     width: 80px;
 }
-  }
+  
   
   .section-content pre{
-    background: #FEC62E;
+    background: white;
+    border: 8px solid #5551FF;
+    box-shadow: -10px 10px 0 0 #ABAAF6;
     font-family: "Nunito", sans-serif;
     font-size: 1.6rem;
     overflow: scroll;
@@ -167,7 +172,7 @@ header{
   }
   
   .section-content blockquote{
-    border-left: 4px solid var(--gray30);
+    border-left: 4px solid #5551FF;
     margin: 32px 0 64px;
     padding-left: 16px;
   }
@@ -199,3 +204,4 @@ header{
       h1{
         font-size: 4rem;
       }
+    }
