@@ -1,0 +1,68 @@
+:root{
+    --gray10: #616161;
+    --gray20: #424242;
+    --gray30: #212121;
+  }
+  
+  html{
+    font-family: "Nunito", sans-serif;
+    font-size: 10px;
+  }
+  
+  h1{
+    font-size: 4rem;
+  }
+  
+  h2{
+    font-size: 3.2rem;
+  }
+  
+  h3{
+    font-size: 2.4rem;
+  }
+  
+  p{
+    font-size: 1.6rem;
+  }
+  
+  nav details{
+    font-size: 1.4rem;
+  }
+  
+  details summary{
+    font-weight: 700;
+  }
+  
+  .section-content li{
+    font-size: 1.4rem;
+  }
+  
+  .section-content p, h3{
+    color: var(--gray20);
+  }
+  
+  .hero{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url("../assets/icons/pattern.svg");
+    height: 350px;
+    width: 100%;
+  }
+  
+  .section-content h3{
+    counter-increment: contador;
+  }
+  
+  .section-content h3::before{
+    content: counter(contador) ". ";
+  }
+  
+  .section-content h3::after{
+    content: "";
+    background: var(--gray20);
+    display: block;
+    height: 4px;
+    width: 80px;
+  }
+  
+  .section-content pre{
+    background: #FEC62E;
+  } 
