@@ -77,10 +77,6 @@ header{
     max-width: 900px;
     margin: 0 auto;
   }
-
-  main{
-    margin-block-end: 50px;
-  }
   
   .main hr{
     margin: 64px 0;
@@ -185,6 +181,41 @@ header{
     content: "- "
   }
   
+  .newsletter{
+    /* border: 1px solid red; */
+    margin-block-start: 50px;
+    margin-block-end: 100px;
+  }
+  
+  
+  .newsletter-content p{
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin-block-end: 16px;
+  }
+  
+  .newsletter-content form input{
+    border-radius: 90px;
+    block-size: 48px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray10);
+    inline-size: 250px;
+    margin-inline-end: 16px;
+    outline: none;
+    padding: 12px 16px;
+  }
+  
+  .newsletter-content form input[type="email"]{
+    padding-inline-end: 75px;
+  }
+  
+  .newsletter-content form input[type="submit"]{
+    background-color: #000000;
+    color: white;
+    margin-inline-start: -80px;
+    width: 120px;
+  }
+
   @media screen and (max-width: 1400px){
       header{
         left: 0;
